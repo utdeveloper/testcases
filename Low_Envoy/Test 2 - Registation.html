@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://52.24.99.52:3000/" />
+<title>Test 2 - Registation</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test 2 - Registation</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<!--Verify Site-->
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy</td>
+	<td></td>
+</tr>
+<!--Go to request demo page-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=REQUEST DEMO</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=REQUEST DEMO</td>
+	<td></td>
+</tr>
+<!--Verify page-->
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Signup</td>
+	<td></td>
+</tr>
+<!--submit with empty name fiel-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<!--View Please Fill out this field Message near Name Field-->
+<!--Submit with empty mobile no field-->
+<tr>
+	<td>type</td>
+	<td>name=username</td>
+	<td>UTDeveloper</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=mobile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<!--View Please Fill out this field  Message near Mobile No Field-->
+<!--Submit with empty email-->
+<tr>
+	<td>type</td>
+	<td>name=mobile</td>
+	<td>0718790541</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Signup</td>
+	<td></td>
+</tr>
+<!--submit with name phoneNo email-->
+<tr>
+	<td>type</td>
+	<td>name=username</td>
+	<td>UTDeveloper</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=mobile</td>
+	<td>0718790541</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=email</td>
+	<td>testceydigital@gmail.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Signup</td>
+	<td></td>
+</tr>
+<!--submit with empty password-->
+<tr>
+	<td>type</td>
+	<td>name=username</td>
+	<td>UTDeveloper</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=mobile</td>
+	<td>0718790541</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=email</td>
+	<td>testceydigital@gmail.com</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<!--submit with empty confurm password-->
+<tr>
+	<td>type</td>
+	<td>name=username</td>
+	<td>UTDeveloper</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=mobile</td>
+	<td>0718790541</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=email</td>
+	<td>testceydigital@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>ceydigital</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Signup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.error_message</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.error_message</td>
+	<td>Passwords Do Not Match.</td>
+</tr>
+<!--submit with different passwords-->
+<tr>
+	<td>type</td>
+	<td>name=username</td>
+	<td>UTDeveloper</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=mobile</td>
+	<td>0718790541</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=email</td>
+	<td>testceydigital@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>UT Developer</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>name=confirm_password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=confirm_password</td>
+	<td>ceydigital2</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.error_message</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.error_message</td>
+	<td>Passwords Do Not Match.</td>
+</tr>
+<!--submit with match password , not accept policy-->
+<tr>
+	<td>type</td>
+	<td>name=username</td>
+	<td>UTDeveloper</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=mobile</td>
+	<td>0718790541</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=email</td>
+	<td>testceydigital@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>ceydigital</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=confirm_password</td>
+	<td>ceydigital</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.error_message</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.error_message</td>
+	<td>Your Should Agree with Our Terms.</td>
+</tr>
+<!--All Correct-->
+<tr>
+	<td>type</td>
+	<td>name=username</td>
+	<td>UTDeveloper</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=mobile</td>
+	<td>0718790541</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=email</td>
+	<td>testceydigital@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>ceydigital</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=confirm_password</td>
+	<td>ceydigital</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=label &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=label</td>
+	<td>I have read and agree to the</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=user_agreement</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

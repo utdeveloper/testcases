@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="Test 1 - Test index page.html">Test 1 - Test index page</a></td></tr>
+<tr><td><a href="Test 2 - Registation.html">Test 2 - Registation</a></td></tr>
+<tr><td><a href="Test 3 - Register with Registered Email & Links.html">Test 3 - Register with Registered Email & Links</a></td></tr>
+<tr><td><a href="Test 4 - User Login.html">Test 4 - User Login</a></td></tr>
+<tr><td><a href="Test 5 - check login page links.html">Test 5 - check login page links</a></td></tr>
+<tr><td><a href="Test 6 - Password Reset (send Email to user).html">Test 6 - Password Reset (send Email to user)</a></td></tr>
+<tr><td><a href="Test 7 - Add New Password.html">Test 7 - Add New Password</a></td></tr>
+<tr><td><a href="Test 8 - Login with reset password.html">Test 8 - Login with reset password</a></td></tr>
+<tr><td><a href="Test 9 - Reuse password Reset link.html">Test 9 - Reuse password Reset link</a></td></tr>
+</tbody></table>
+</body>
+</html>

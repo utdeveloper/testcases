@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://52.24.99.52:3000/" />
+<title>Test 5 - check login page links</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test 5 - check login page links</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy</td>
+	<td></td>
+</tr>
+<!--go to login page-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=SIGN IN</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=SIGN IN</td>
+	<td></td>
+</tr>
+<!--verify forget password link-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=exact:Forgot Password?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=exact:Forgot Password?</td>
+	<td>exact:Forgot Password?</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=exact:Forgot Password?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Forgot Password</td>
+	<td></td>
+</tr>
+<!--Go back to login page-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Back to Login.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Back to Login.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Login</td>
+	<td></td>
+</tr>
+<!--Verify Get an LawEnvoy ID  link-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Get an LawEnvoy ID</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Get an LawEnvoy ID</td>
+	<td>Get an LawEnvoy ID</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Get an LawEnvoy ID</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Signup</td>
+	<td></td>
+</tr>
+<!--Go back to login page-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Login</td>
+	<td></td>
+</tr>
+<!--Verify Back to home link-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Back to Home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Back to Home</td>
+	<td>Back to Home</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Back to Home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
