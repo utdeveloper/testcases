@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://52.24.99.52:3000/" />
+<title>Test 15 - Test Case</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test 15 - Test Case</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='sidebar-content']/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='sidebar-content']/ul/li[3]/a/span</td>
+	<td>Cases</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='sidebar-content']/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Cases</td>
+	<td></td>
+</tr>
+<!--Verify page content-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.content-header</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.content-header</td>
+	<td>CASES</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=txtSearch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=txtSearch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.content-body.container</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=New Case</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=New Case</td>
+	<td>New Case</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//button[@type='button']</td>
+	<td>Show Archived</td>
+</tr>
+<!--Create New Case-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=New Case</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=New Case</td>
+	<td>New Case</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=New Case</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Create Case</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.content-header</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=h4.header-title.buttons</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=h4.header-title.buttons</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=CANCEL</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=small.ng-binding</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=small.ng-binding</td>
+	<td>Fields are Required</td>
+</tr>
+<!--test client details-->
+<tr>
+	<td>type</td>
+	<td>id=client_name_value</td>
+	<td>Amal</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=last_name</td>
+	<td>perera</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=client_name</td>
+	<td>W.A.perera</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=company</td>
+	<td>Test Company</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//option[@value='Sri Lanka']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//div[@id='client_details']/div/div[5]/div/select</td>
+	<td>label=Saint Helena</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//div[@id='client_details']/div/div[5]/div/select</td>
+	<td>label=Slovenia</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//div[@id='client_details']/div/div[5]/div/select</td>
+	<td>label=Sri Lanka</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=client_email</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='client_details']/div/div[6]/div/small</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='client_details']/div/div[6]/div/small</td>
+	<td>Invalid Email</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=client_email</td>
+	<td>testceydigital@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=profession</td>
+	<td>trainner</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=telephone-no</td>
+	<td>0711234567</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=address</td>
+	<td>Badulla road, Bandaraqela</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=div.form-horizontal &gt; div.form-group.add-field &gt; label.col-sm-10.control-label &gt; #add-new-field</td>
+	<td>Address 2</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//button[@type='button'])[2]</td>
+	<td>Add Field</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=field.value</td>
+	<td>Bandarawella</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=remove</td>
+	<td>remove</td>
+</tr>
+<!--Add case datails-->
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://52.24.99.52:3000/" />
+<title>Test 11 - Test Left Nav pannel</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test 11 - Test Left Nav pannel</td></tr>
+</thead><tbody>
+<!--Verify Load-->
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Dashboard</td>
+	<td></td>
+</tr>
+<!--Verify Logo-->
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=a.logo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=LAW|Envoy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='sidebar-content']/ul/li/a/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Dashboard</td>
+	<td></td>
+</tr>
+<!--Verify Sidebar Content-->
+<!--Verify Sidebar present-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=ul.sidebar-nav</td>
+	<td></td>
+</tr>
+<!--Dashboard button-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=menu Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=menu Dashboard</td>
+	<td>menu Dashboard</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=li.active &gt; a &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.content-header</td>
+	<td>DASHBOARD</td>
+</tr>
+<!--Case Button-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=assignment Cases</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=assignment Cases</td>
+	<td>assignment Cases</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='sidebar-content']/ul/li[3]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Cases</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.content-header</td>
+	<td>CASES</td>
+</tr>
+<!--Contact Button-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=contacts Contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=contacts Contacts</td>
+	<td>contacts Contacts</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=contacts Contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.content-header</td>
+	<td>CONTACTS</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.content-header</td>
+	<td></td>
+</tr>
+<!--Documnet buton-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=attachment Documents</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=attachment Documents</td>
+	<td>attachment Documents</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=attachment Documents</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Documents</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.content-header</td>
+	<td>DOCUMENTS</td>
+</tr>
+<!--Calender Button-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='sidebar-content']/ul/li[6]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//div[@id='sidebar-content']/ul/li[6]/a</td>
+	<td>event Calendar</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='sidebar-content']/ul/li[6]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.content-header</td>
+	<td>CALENDAR</td>
+</tr>
+<!--Trash Button-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=delete Trash</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=delete Trash</td>
+	<td>delete Trash</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=delete Trash</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Trash</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.content-header</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.content-header</td>
+	<td>TRASH</td>
+</tr>
+<!--Config-->
+<!--Still Development-->
+<!--profile Button-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=account_box Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=account_box Profile</td>
+	<td>account_box Profile</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=account_box Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.content-header</td>
+	<td></td>
+</tr>
+<!--Need To Change To Profile Current hava Dashboard-->
+<tr>
+	<td>verifyText</td>
+	<td>css=div.content-header</td>
+	<td>PROFILE</td>
+</tr>
+<!--SignOut-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=power_settings_new Sign Out</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=power_settings_new Sign Out</td>
+	<td>power_settings_new Sign Out</td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

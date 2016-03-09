@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://52.24.99.52:3000/" />
+<title>Test 12 - Test Action Row Bar</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test 12 - Test Action Row Bar</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Dashboard</td>
+	<td></td>
+</tr>
+<!--Verify hearder-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.content-header</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.content-header</td>
+	<td>DASHBOARD</td>
+</tr>
+<!--Verify Row ActionBar-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.row.actions_bar</td>
+	<td></td>
+</tr>
+<!--test  create case button-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Create Case</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Create Case</td>
+	<td>Create Case</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Create Case</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Create Case</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=menu Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=menu Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Dashboard</td>
+	<td></td>
+</tr>
+<!--Verify contact Button-->
+<tr>
+	<td>verifyText</td>
+	<td>link=Contacts</td>
+	<td>Contacts</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=menu Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=menu Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Contacts</td>
+	<td></td>
+</tr>
+<!--verify Document Button-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Documents</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Documents</td>
+	<td>Documents</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Documents</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Documents</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=menu Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=menu Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Dashboard</td>
+	<td></td>
+</tr>
+<!--verify calender Button-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Calendar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Calendar</td>
+	<td>Calendar</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='page-content']/div[2]/div/div/a[4]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Calendar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=menu Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=menu Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Dashboard</td>
+	<td></td>
+</tr>
+<!--Verify Profile Button-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Profile</td>
+	<td>Profile</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>LAW|Envoy - Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=menu Dashboard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=menu Dashboard</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
